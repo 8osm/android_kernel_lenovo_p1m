@@ -371,10 +371,10 @@ KBUILD_CPPFLAGS := -D__KERNEL__
 
 KBUILD_CFLAGS   := -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -fno-strict-aliasing -fno-common \
-		   -Werror-implicit-function-declaration \
+		   -Wno-error-implicit-function-declaration \
 		   -Wno-format-security \
 		   -fno-delete-null-pointer-checks \
-		   -Wno-format-truncation -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast
+		   -Wno-format-truncation -Wno-error=int-to-pointer-cast -Wno-error=pointer-to-int-cast
 
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
